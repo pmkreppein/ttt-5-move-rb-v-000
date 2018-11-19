@@ -5,15 +5,7 @@ describe './bin/move executing a CLI Application' do
 
   end
 
-  it 'prints "Welcome to Tic Tac Toe!"' do
-    allow($stdout).to receive(:puts)
-    allow(self).to receive(:gets).and_return("1")
-
-    expect($stdout).to receive(:puts).with("Welcome to Tic Tac Toe!"), "Make sure `bin/move` has code that can output 'Welcome to Tic Tac Toe!' exactly."
-
-    run_file("./bin/move")
-  end
-
+  
   it 'asks the user for input' do
     allow($stdout).to receive(:puts)
 
