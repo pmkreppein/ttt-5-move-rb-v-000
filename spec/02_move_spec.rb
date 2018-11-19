@@ -1,10 +1,6 @@
 require_relative "../lib/move.rb"
 
-describe './lib/move.rb' do
-  it 'defines a move method' do
-    board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-    expect(defined?(move)).to be_truthy
-  end
+
 
   context '#move' do
     it 'accepts 3 arguments: the board, the position a player wants to fill and their char, X or O' do
